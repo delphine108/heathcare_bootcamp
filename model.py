@@ -1,6 +1,8 @@
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.preprocessing import Imputer
 from sklearn.pipeline import Pipeline
+from sklearn.preprocessing import StandardScaler
+from sklearn.feature_selection import SelectPercentile, f_classif
 from sklearn import svm
 
 def model(X_train, y_train, X_test):
