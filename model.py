@@ -1,6 +1,7 @@
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.preprocessing import Imputer
 from sklearn.pipeline import Pipeline
+from sklearn import svm
 
 def model(X_train, y_train, X_test):
     clf = Pipeline([('imputer', Imputer()),
